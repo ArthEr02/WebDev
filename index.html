@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    :root{
+        /*=====-Color-=====*/
+        --body-color : #dddddd;
+        --sidebar-color : #ffffff;
+        --text-color : #707070;
+    }
+    .text{
+        font-size: 20px;
+        font-style: Monospace;
+        color: #000;
+    }
+    .text_1{
+        font-style: Monospace;
+        font-size: 18px;
+        color: var(--text-color);
+    }
+    .text_2{
+        font-style: Monospace;
+        font-size: 19px;
+        color: var(--text-color);
+        margin-left: 10%;
+    }
+    body{
+        height:100%;
+        background: var(--body-color);
+    }
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        padding: 10px 14px;
+        background: var(--sidebar-color);
+        z-index: 100;  
+    }
+    .sidebar li{
+        height: 50px;
+        margin-top: 15px;
+        margin-left: -25%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    .sidebar li .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 30px;
+        font-size: 20px;
+    }
+    .sidebar li .icon,
+    .sidebar li .text{
+        margin-left: 15px;
+        color: var(--text-color);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .sidebar li a{
+        height: 100%;
+        width: 250px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .sidebar li a:hover{
+        background: #696969;
+    }
+    .sidebar li a:hover img .icon,
+    .sidebar li a:hover .text{
+        color: var(--sidebar-color);
+    }
+    section{
+        margin-top: 0;
+    }
+    .home{
+        position: relative;
+        top: 0;
+        left: 230px;
+        height: 100vh;
+        width: calc(100% - 230px);
+        background: var(--body-color);
+    }
+    .home .text{
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 500;
+        padding: 8px 40px;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 300px;
+    }
+    hr{
+        margin-left: 0;
+        width: calc(100% - 200px);
+    }
+    table{
+        width: 70%;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .con{
+        border-radius: 50%;
+        width: 50px;
+    }
+</style>
+<title>Document</title>
+</head>
+    <body>
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="#profile">
+                        <img class = "icon" src="img/icon/user.png" alt="icon-user" width="10px">
+                        <span class="text nav-text">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <img class = "icon" src="img/icon/info.png" alt="icon-graduation" width="10px">
+                        <span class="text nav-text">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <img class = "icon" src="img/icon/send.png" alt="icon-graduation" width="10px">
+                        <span class="text nav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="home">
+                <span class="text" id="profile">Profile</span><hr>
+                <p>
+                    <center>
+                        <table>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <img class="circle" src="img/profile/me.JPG" alt="me">
+                                    </center>
+                                </td>
+                                <td>
+                                    <p>
+                                        <span class="text_1">Student ID 64021520</span> 
+                                    </p>
+                                    <p>
+                                       <span class="text_1">Mr. Surapon Prempreeda</span> 
+                                    </p>
+                                    <p>
+                                        <span class="text_1">Nickname Arther</span> 
+                                    </p>
+                                    <p>
+                                        <span class="text_1">Birthday is 3rd October 2002</span> 
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <span class="text_1">รหัสนักศึกษา 64021520</span> 
+                                    </p>
+                                    <p>
+                                       <span class="text_1">นาย สุรพล เปรมปรีดา</span> 
+                                    </p>
+                                    <p>
+                                        <span class="text_1">ชื่อเล่น อาเธอร์</span> 
+                                    </p>
+                                    <p>
+                                        <span class="text_1">วันเกิด 3 ตุลาคม พ.ศ. 2545</span> 
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </p>
+                <span class="text" id="about">About</span><hr>
+                <p><span class="text_2">My Educational</span></p>
+                <p>  
+                    <center>
+                        <table>
+                            <tr>
+                                <td>
+                                    <span class="text_1">Kindergarten-Middle school</span>
+                                </td>
+                                <td>
+                                    <span class="text_1">Banpadaet(Wettayasmis) School</span>
+                                </td>
+                                <td>
+                                    <span class="text_1">2007 - 2018</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="text_1">High school</span>
+                                </td>
+                                <td>
+                                    <span class="text_1">Maesuai Witthayakhom School</span>
+                                </td>
+                                <td>
+                                    <span class="text_1">2018-2021</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="text_1">Bachelor’s Degree</span>
+                                </td>
+                                <td>
+                                    <span class="text_1">University of Phayao</span>
+                                </td>
+                                <td>
+                                    <span class="text_1">2021-Present</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </p>
+                <span class="text" id="contact">Contact</span><hr>
+                <p>
+                    <center>
+                        <a href="https://www.facebook.com/art.sytem"><img class="con" src="img/icon/facebook (1).png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/txkumi_uiji/"><img class="con" src="img/icon/instagram (1).png" alt="instagram"></a>
+                    </center>
+                </p>
+        </section>
+    </body>
+</html>
